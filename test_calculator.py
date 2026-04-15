@@ -26,7 +26,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
-            div(0, 5)
+            divide(5, 0)
 
     def test_logarithm(self):
         self.assertAlmostEqual(logarithim(16, 2), 4)
