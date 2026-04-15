@@ -29,14 +29,14 @@ class TestCalculator(unittest.TestCase):
             divide(5, 0)
 
     def test_logarithm(self):
-        self.assertAlmostEqual(logarithim(16, 2), 4)
-        self.assertAlmostEqual(logarithim(100, 10), 2)
-        self.assertAlmostEqual(logarithim(8, 2), 3)
+        self.assertAlmostEqual(logarithm(16, 2), 4)
+        self.assertAlmostEqual(logarithm(100, 10), 2)
+        self.assertAlmostEqual(logarithm(8, 2), 3)
 
 
     def test_log_invalid_base(self):
         with self.assertRaises(ValueError):
-            logarithim(5, 1)
+            logarithm(5, 1)
                        
     
     def test_log_invalid_argument(self): 
